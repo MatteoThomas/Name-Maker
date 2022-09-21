@@ -1,3 +1,7 @@
 # Name Maker
 
-### An app for generating titles for anything from a list of words you provide
+### An app for generating titles for anything
+
+Add words, choose title word length and that's it!
+
+[Deployed Site](https://matteothomas.github.io/Name-Maker/)
