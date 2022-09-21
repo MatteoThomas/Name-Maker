@@ -1,41 +1,79 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  margin: 0 auto;
+  width: clamp(250px, 50vw, 700px);
+  font-size: clamp(2.3rem, 4vw, 3rem);
+  font-weight: bold;
+  line-height: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header span {
+  font-size: 0.4em;
+  font-weight: lighter;
+  line-height: 1.3em;
 }
 
-.card {
-  padding: 2em;
+li {
+  margin: 0.3rem 0 0;
+  list-style: none;
 }
 
-.read-the-docs {
-  color: #888;
+#input-area {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+input {
+  border-radius: 10px;
+  margin: 1rem;
+  height: 2rem;
+  width: 300px;
+  padding: 0 0 0 0rem;
+  border: none;
+  text-align: center;
+}
+
+#add-word-button {
+  margin: 0.5rem;
+}
+
+#word-list {
+  border-radius: 10px;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  height: clamp(0rem, 200px, 15rem);
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#random-button {
+  margin: 0 auto;
+  width: 10rem;
+}
+
+#generated-name {
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: rgb(71, 71, 71);
+  width: 300px;
 }
